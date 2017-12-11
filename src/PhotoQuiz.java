@@ -45,7 +45,7 @@ public class PhotoQuiz {
 
 		// 7. print "CORRECT" if the user gave the right answer
 
-		if (answer1.equals("Yes")) {
+		if (answer1.equalsIgnoreCase("Yes")) {
 			score++;
 			JOptionPane.showMessageDialog(null, "That is correct! Your score is " + score + ".");
 		}
@@ -76,14 +76,14 @@ public class PhotoQuiz {
 		String answer2 = JOptionPane.showInputDialog("Is there a boy in this picture? (Yes or No)");
 
 		// 14+ check answer, say if correct or incorrect, etc.
-		if (answer2.equals("No")) {
+		if (answer2.equalsIgnoreCase("No")) {
 			score++;
 			JOptionPane.showMessageDialog(null, "That is correct! Your score is " + score + ".");
 		} else {
 			score--;
 			JOptionPane.showMessageDialog(null, "Nope, wrong! Your score is " + score + ".");
 		}
-
+		System.exit(0);
 	}
 
 	private static Component createImage(String imageUrl) throws MalformedURLException {
