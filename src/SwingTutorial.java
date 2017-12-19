@@ -5,7 +5,7 @@ import javax.swing.JPanel;
 
 public class SwingTutorial {
 	public static void main(String[] args) {
-		// 1. Make (Initialize) your GUI components
+		// 1. Make (declare and initialize) your GUI components
 		JFrame frame = new JFrame("Swing Tutorial");  // JFrame is a "heavy weight" container used to hold other components (think the window that holds everything else)
 		JPanel panel = new JPanel(); // JPanel is a "light weight" container used to hold other components (think of a container that is used to organize other GUI components)
 		JLabel label = new JLabel(); // Component which is a display area for text or image (or both)
