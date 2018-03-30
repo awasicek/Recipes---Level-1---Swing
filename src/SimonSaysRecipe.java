@@ -101,7 +101,7 @@ public class SimonSaysRecipe extends KeyAdapter {
 
 	private void showImage() {
 		// 5. initialize your frame to a new JFrame()
-		myFrame = new JFrame();
+		myFrame = new JFrame("Simon Says v1.0");
 		
 		// 6. set the frame to visible
 		myFrame.setVisible(true);

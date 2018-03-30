@@ -36,19 +36,19 @@ public class Jukebox implements Runnable, MouseListener {
 
 	public void run() {
 
-//		myFrame.setVisible(true);
-//		myFrame.add(myPanel);
-//		albumArt1 = loadImage("bonfire.jpg");
-//		albumArt2 = loadImage("prey.png");
-//		myPanel.add(albumArt1);
-//		myPanel.add(albumArt2);
-//		myFrame.pack();
+		myFrame.setVisible(true);
+		myFrame.add(myPanel);
+		albumArt1 = loadImage("bonfire.jpg");
+		albumArt2 = loadImage("prey.png");
+		myPanel.add(albumArt1);
+		myPanel.add(albumArt2);
+		myFrame.pack();
 		
 		// 3. Find an mp3 on your computer or on the Internet.
 		// 4. Create a Song
 
 		// 5. Play the Song
-		song1.play();
+		//song1.play();
 		
 		/*
 		 * 6. Create a user interface for your Jukebox so that the user can to
@@ -57,8 +57,8 @@ public class Jukebox implements Runnable, MouseListener {
 		 * cover is clicked, stop the currently playing song, and play the one
 		 * that was selected.
 		 */
-//		albumArt1.addMouseListener(this);
-//		albumArt2.addMouseListener(this);
+		albumArt1.addMouseListener(this);
+		albumArt2.addMouseListener(this);
 		
 	}
 
